@@ -35,13 +35,26 @@ Email::make('Email')
     ->clickable(),
 ```
 
+#### Clickable on Index
+Make the field display as a mailto link on the index page:
+
+```php
+Email::make('Email')
+    ->clickableOnIndex(),
+```
+
 ## Appearance
-### Index
+### Index (default)
 ![index-field](https://raw.githubusercontent.com/inspheric/nova-email-field/master/docs/index-field.png)
 
 The field is displayed as a plain `<span>` element.
 
-### Detail
+### Index (clickable)
+![index-field-clickable](https://raw.githubusercontent.com/inspheric/nova-email-field/master/docs/index-field-clickable.png)
+
+The field is displayed as an `<a href="mailto:...">` element with an icon.
+
+### Detail (default)
 ![detail-field](https://raw.githubusercontent.com/inspheric/nova-email-field/master/docs/detail-field-plain.png)
 
 The field is displayed as a plain `<span>` element.
@@ -49,7 +62,7 @@ The field is displayed as a plain `<span>` element.
 ### Detail (clickable)
 ![detail-field-clickable](https://raw.githubusercontent.com/inspheric/nova-email-field/master/docs/detail-field-clickable.png)
 
-The field is displayed as an `<a href="mailto:...">` element.
+The field is displayed as an `<a href="mailto:...">` element with an icon.
 
 ### Form
 ![form-field](https://raw.githubusercontent.com/inspheric/nova-email-field/master/docs/form-field.png)
