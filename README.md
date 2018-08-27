@@ -27,7 +27,7 @@ The field extends the `Laravel\Nova\Fields\Text` field, so all the usual methods
 It is recommended that you include the standard `email` validation rule, as it is not automatically added.
 
 ### Options
-
+#### Clickable
 Make the field display as a mailto link on the detail page:
 
 ```php
