@@ -1,5 +1,5 @@
 Nova.booting((Vue, router) => {
-    Vue.component('index-email', require('./components/IndexField'));
-    Vue.component('detail-email', require('./components/DetailField'));
-    Vue.component('form-email', require('./components/FormField'));
+    Vue.component('index-email-field', require('./components/IndexField'));
+    Vue.component('detail-email-field', require('./components/DetailField'));
+    Vue.component('form-email-field', require('./components/FormField'));
 })

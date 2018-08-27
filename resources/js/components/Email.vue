@@ -1,8 +1,9 @@
 <template>
         <div>
             <a :href="`mailto:${field.value}`"
-                v-if="clickable"
+                v-if="clickable && field.value"
                 class="cursor-pointer dim no-underline text-primary inline-flex items-center"
+                target="_blank"
             >
                 <svg xmlns="http://www.w3.org/2000/svg"
                     class="fill-current mr-2"
@@ -18,7 +19,8 @@
                     {{ field.value }}
                 </span>
             </a>
-            <span v-else>{{ field.value }}</span>
+            <span v-else-if="field.value">{{ field.value }}</span>
+            <span v-else>&mdash;</span>
         </div>
 </template>
 
