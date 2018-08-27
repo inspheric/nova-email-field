@@ -14,7 +14,8 @@ class Email extends Text
     public $component = 'email';
 
     /**
-     * Whether the email should be displayed as a clickable mailto link.
+     * Whether the email should be displayed as a clickable
+     * mailto link on the detail page.
      *
      * @param  bool $clickable
      * @return $this
@@ -22,5 +23,17 @@ class Email extends Text
     public function clickable(bool $clickable = true)
     {
         return $this->withMeta(['clickable' => $clickable]);
+    }
+
+    /**
+     * Whether the email should be displayed as a clickable
+     * mailto link on the index page.
+     *
+     * @param  bool $clickable
+     * @return $this
+     */
+    public function clickableOnIndex(bool $clickable = true)
+    {
+        return $this->withMeta(['clickableOnIndex' => $clickable]);
     }
 }
