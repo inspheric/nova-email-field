@@ -3,7 +3,10 @@
     "description": "A Laravel Nova email field.",
     "keywords": [
         "laravel",
-        "nova"
+        "nova",
+        "field",
+        "email",
+        "mailto"
     ],
     "license": "MIT",
     "require": {
