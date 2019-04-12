@@ -39,7 +39,7 @@ class Email extends Text
 
     /**
      * Whether the email should be displayed as a clickable
-     * mailto link on the index and detail page.
+     * mailto link on both the index and detail pages.
      *
      * @param  bool $clickable
      * @return $this
