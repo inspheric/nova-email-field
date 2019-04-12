@@ -24,6 +24,8 @@ Email::make('Email')
 
 The field extends the `Laravel\Nova\Fields\Text` field, so all the usual methods are available.
 
+**Now supports readonly, placeholder and overriding the default `type="email"` if you prefer not to have the validation in the browser. This is from the standard Nova `Text` field so is not documented here.**
+
 It is recommended that you include the standard `email` validation rule, as it is not automatically added.
 
 ### Options
