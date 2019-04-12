@@ -1,12 +1,13 @@
 <template>
     <default-field :field="field" :errors="errors">
         <template slot="field">
-            <input type="email"
+            <input
                 class="w-full form-control form-input form-input-bordered"
                 :id="field.attribute"
                 :dusk="field.attribute"
                 v-model="value"
                 v-bind="extraAttributes"
+                :disabled="isReadonly"
             />
         </template>
     </default-field>
@@ -21,6 +22,7 @@ export default {
     computed: {
         defaultAttributes() {
             return {
+                type: this.field.type || 'email',
                 placeholder: this.field.placeholder || this.field.name,
                 class: this.errorClasses,
             }
