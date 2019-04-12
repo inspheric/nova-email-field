@@ -36,4 +36,17 @@ class Email extends Text
     {
         return $this->withMeta(['clickableOnIndex' => $clickable]);
     }
+
+    /**
+     * Whether the email should be displayed as a clickable
+     * mailto link on the index and detail page.
+     *
+     * @param  bool $clickable
+     * @return $this
+     */
+    public function alwaysClickable(bool $clickable = true)
+    {
+        return $this->clickable($clickable)
+            ->clickableOnIndex($clickable);
+    }
 }
