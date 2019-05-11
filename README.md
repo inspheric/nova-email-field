@@ -45,6 +45,14 @@ Email::make('Email')
     ->clickableOnIndex(),
 ```
 
+#### Always Clickable
+Combination of the two functions above for simplicity:
+
+```php
+Email::make('Email')
+    ->alwaysClickable(),
+```
+
 ## Appearance
 ### Index (default)
 ![index-field](https://raw.githubusercontent.com/inspheric/nova-email-field/master/docs/index-field.png)
