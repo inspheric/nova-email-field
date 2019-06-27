@@ -78,3 +78,7 @@ The field is displayed as an `<a href="mailto:...">` element with an icon. If th
 ![form-field](https://raw.githubusercontent.com/inspheric/nova-email-field/master/docs/form-field.png)
 
 The field is displayed as an `<input type="email">` element.
+
+## Donate
+
+:purple_heart: If you like this package, you can show your appreciation by [donating any amount via PayPal](https://burtonsenior.com/donate/inspheric/nova-defaultable) to support ongoing development.
