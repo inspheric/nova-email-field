@@ -79,6 +79,3 @@ The field is displayed as an `<a href="mailto:...">` element with an icon. If th
 
 The field is displayed as an `<input type="email">` element.
 
-## Donate
-
-:purple_heart: If you like this package, you can show your appreciation by [donating any amount via PayPal](https://burtonsenior.com/donate/inspheric/nova-email-field) to support ongoing development.
