@@ -1,15 +1,15 @@
 <template>
-    <email-field :field="field" :clickable="field.clickableOnIndex"></email-field>
+  <EmailField :field="field" :clickable="field.clickable" />
 </template>
 
 <script>
-import Email from './Email'
+import EmailField from './EmailField'
 
 export default {
-    props: ['resourceName', 'field'],
+  props: ['resourceName', 'field'],
 
-    components: {
-        'email-field': Email
-    }
+  components: {
+    EmailField
+  }
 }
 </script>

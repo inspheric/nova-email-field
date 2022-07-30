@@ -1,5 +1,9 @@
-Nova.booting((Vue, router) => {
-    Vue.component('index-email-field', require('./components/IndexField'));
-    Vue.component('detail-email-field', require('./components/DetailField'));
-    Vue.component('form-email-field', require('./components/FormField'));
+import IndexField from './components/IndexField'
+import DetailField from './components/DetailField'
+import FormField from './components/FormField'
+
+Nova.booting((app, store) => {
+  app.component('index-inspheric-email-field', IndexField)
+  app.component('detail-inspheric-email-field', DetailField)
+  app.component('form-inspheric-email-field', FormField)
 })

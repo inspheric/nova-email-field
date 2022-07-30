@@ -11,7 +11,7 @@ class Email extends Text
      *
      * @var string
      */
-    public $component = 'email-field';
+    public $component = 'inspheric-email-field';
 
     /**
      * Whether the email should be displayed as a clickable

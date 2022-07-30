@@ -1,19 +1,19 @@
 <template>
-    <panel-item :field="field">
-        <template slot="value">
-            <email-field :field="field" :clickable="field.clickable"></email-field>
-        </template>
-    </panel-item>
+  <PanelItem :index="index" :field="field">
+    <template #value>
+      <EmailField :field="field" :clickable="field.clickable" />
+    </template>
+  </PanelItem>
 </template>
 
 <script>
-import Email from './Email'
+import EmailField from './EmailField'
 
 export default {
-    props: ['resource', 'resourceName', 'resourceId', 'field'],
+  props: ['index', 'resource', 'resourceName', 'resourceId', 'field'],
 
-    components: {
-        'email-field': Email
-    }
+  components: {
+    EmailField
+  }
 }
 </script>
