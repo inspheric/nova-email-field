@@ -1,5 +1,5 @@
 # Laravel Nova Email Field
-An email input and mailto link field for Laravel Nova
+An email input and mailto link field for Laravel Nova. ***Version 2.0 now supports Nova 4.0 and Vue 3.0!***
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/inspheric/nova-email-field.svg?style=flat-square)](https://packagist.org/packages/inspheric/nova-email-field)
 [![Total Downloads](https://img.shields.io/packagist/dt/inspheric/nova-email-field.svg?style=flat-square)](https://packagist.org/packages/inspheric/nova-email-field)
